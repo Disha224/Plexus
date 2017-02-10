@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="49413" started-at="2017-02-10T09:25:08Z" finished-at="2017-02-10T09:25:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="49413" started-at="2017-02-10T09:25:08Z" finished-at="2017-02-10T09:25:57Z">
+      <class name="plexus.test.PromotionForm">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:plexus.test.PromotionForm@61832929]" name="LaunchBrowser" is-config="true" duration-ms="10690" started-at="2017-02-10T04:25:08Z" finished-at="2017-02-10T04:25:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestPromotionForm()[pri:0, instance:plexus.test.PromotionForm@61832929]" name="TestPromotionForm" duration-ms="38577" started-at="2017-02-10T04:25:18Z" finished-at="2017-02-10T04:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPromotionForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:plexus.test.PromotionForm@61832929]" name="tearDown" is-config="true" duration-ms="129" started-at="2017-02-10T04:25:57Z" finished-at="2017-02-10T04:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- plexus.test.PromotionForm -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
