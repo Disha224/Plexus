@@ -23,7 +23,7 @@ public class PlexusSharedFunctions {
 	@BeforeClass(alwaysRun=true)
 	public static void LaunchBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", "D://ECLIPSE//Plexus//Externals//driver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "..//Plexus//Externals//driver//chromedriver.exe");
 		//System.setProperty("webdriver.gecko.driver", "D://ECLIPSE//eclipse workplace//geckodriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
@@ -108,11 +108,11 @@ public class PlexusSharedFunctions {
 	    }
 	  }
 
-	@AfterClass(alwaysRun=true)
+	/*@AfterClass(alwaysRun=true)
 	public void tearDown(){
 		driver.close();
 		
-	}
+	}*/
 
 	
 }
