@@ -29,7 +29,7 @@ public class PlexusSharedFunctions {
 		options.addArguments("--start-maximized");
 		driver = new ChromeDriver( options );
 		//driver= new FirefoxDriver();
-		driver.get("https://demo.plexuspromotions.com.au");
+		driver.get("https://external.plexuspromotions.com.au");
 	
 	    
 	}
@@ -37,7 +37,7 @@ public class PlexusSharedFunctions {
 	@SuppressWarnings("deprecation")
 	public static void Login()
 	{
-		driver.findElement(By.name("username")).sendKeys("tasnuvadisha@gmail.com");
+		driver.findElement(By.name("username")).sendKeys("tasnuvatehrin@gmail.com");
 		driver.findElement(By.name("password")).sendKeys("123456@");
 		driver.findElement(By.xpath(".//*[@id='root']/div/div[2]/div[2]/form/footer/button")).click();
 		ImplicitWait(30);
@@ -58,18 +58,7 @@ public class PlexusSharedFunctions {
 
 
 	
-	public static void CheckEmpty(String attributename)
-	{
-		WebElement inputBox = driver.findElement(By.name(attributename));
-		String textInsideInputBox = inputBox.getAttribute("value");
-
-		// Check whether input field is blank
-		if(textInsideInputBox.isEmpty())
-		{
-		   System.out.println("Input field is empty");
-		   inputBox.sendKeys("abcdefg");
-		}
-	}
+	
 
 
 
@@ -107,6 +96,19 @@ public class PlexusSharedFunctions {
 	      return false;
 	    }
 	  }
+
+	public static void CheckEmpty(String attributename, String texts) {
+		WebElement inputBox = driver.findElement(By.name(attributename));
+		String textInsideInputBox = inputBox.getAttribute("value");
+
+		// Check whether input field is blank
+		if(textInsideInputBox.isEmpty())
+		{
+		   System.out.println("Input field is empty");
+		   inputBox.sendKeys(texts);
+		}
+		
+	}
 
 	/*@AfterClass(alwaysRun=true)
 	public void tearDown(){

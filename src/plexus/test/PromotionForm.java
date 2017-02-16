@@ -32,8 +32,8 @@ public class PromotionForm extends PlexusSharedFunctions {
 	  HowtoAddPrize();
 	  NotificationandDelivery();
 	  PermitsandPrivacy();
-	  Confirmation(); 
-	  PromotionsCompletionConfirmation();
+	 // Confirmation(); 
+	//  PromotionsCompletionConfirmation();
 	  
   }
   
@@ -42,7 +42,6 @@ public class PromotionForm extends PlexusSharedFunctions {
 	 
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div[2]/div/div/div[1]/div/ul[1]/li[1]/a/span[1]");
 	  PlexusSharedFunctions.verifyTextPresent("LET'S GET STARTED");
-	
 	  driver.findElement(By.name("title")).sendKeys(PromotionName);
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div/div/section/form/footer/button[2]");
 	 
@@ -55,21 +54,21 @@ public class PromotionForm extends PlexusSharedFunctions {
 	 
 	 
 	  PlexusSharedFunctions.verifyTextPresent("PROMOTER INFORMATION");
-	  PlexusSharedFunctions.CheckEmpty("companyName");
-	  PlexusSharedFunctions.CheckEmpty("streetLine1");
-	  PlexusSharedFunctions.CheckEmpty("streetLine2");
-	  PlexusSharedFunctions.CheckEmpty("suburb");
-	  PlexusSharedFunctions.CheckEmpty("postcode");
-	  PlexusSharedFunctions.CheckEmpty("country");
-	  PlexusSharedFunctions.CheckEmpty("state");
-	  PlexusSharedFunctions.CheckEmpty("phoneNumber");
-	  PlexusSharedFunctions.CheckEmpty("businessNumber");
+	  PlexusSharedFunctions.CheckEmpty("companyName","Promoter Pvt Limited");
+	  PlexusSharedFunctions.CheckEmpty("streetLine1","Level 1");
+	  PlexusSharedFunctions.CheckEmpty("streetLine2","23 Main St");
+	  PlexusSharedFunctions.CheckEmpty("suburb","Smithfield");
+	  PlexusSharedFunctions.CheckEmpty("postcode","1111");
+	  Select oSelect = new Select(driver.findElement(By.name("country")));
+      oSelect.selectByVisibleText("Australia");
+      Select oSelect1 = new Select(driver.findElement(By.name("state")));
+      oSelect1.selectByVisibleText("Victoria");
+	  PlexusSharedFunctions.CheckEmpty("phoneNumber","(03) 9908 3784");
+	  PlexusSharedFunctions.CheckEmpty("businessNumber","123 456 789 10");
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='promoter-form']/footer/button[2]");
 	
 	
-	  
-	  
-  }
+}
  
   public void AdvertisingMethods()
   {
@@ -327,8 +326,9 @@ public class PromotionForm extends PlexusSharedFunctions {
 	  driver.findElement(By.xpath(".//*[@id='privacy-declarations']/div[4]/div[1]/div[2]/div/div/div/div/label/span[1]")).click();
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div[2]/div/div[1]/div/div/section/form/footer/button[1]");
 	  PlexusSharedFunctions.ClickablebyXpath("//span[contains(text(),'Next step')]");
-
-      
+	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div[2]/div/div/div/div[3]/div[6]/button");
+	  PlexusSharedFunctions.ClickablebyXpath("html/body/div[2]/div/div[2]/div/div/span/div[2]/button[1]");
+      System.out.println("The Promotion has been created sucessfully");
       
 	  
 }
@@ -336,12 +336,35 @@ public class PromotionForm extends PlexusSharedFunctions {
   public static void Confirmation()
   {
 	  
-	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div[2]/div/div/div/div[3]/div[6]/button");
-	  PlexusSharedFunctions.ClickablebyXpath("html/body/div[2]/div/div[2]/div/div/span/div[2]/button[1]");
-	  PlexusSharedFunctions.ImplicitWait(10);
-	  driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[1]/table/tbody/tr[1]/td[10]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
-	  driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[3]/table/tbody/tr/td[5]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
-	  PlexusSharedFunctions.ClickablebyXpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[6]/button");
+	 
+	  PlexusSharedFunctions.ImplicitWait(30);
+	  /*WebElement element = driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[1]/table/tbody/tr[1]/td[10]/div/div/div[1]/div/div/div/div/label/div/div[2]"));
+      Actions actions = new Actions(driver);
+      actions.moveToElement(element).click().perform();
+      WebElement element1 = driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[3]/table/tbody/tr/td[5]/div/div/div[1]/div/div/div/div/label/div/div[2]"));
+      Actions actions1 = new Actions(driver);
+      actions1.moveToElement(element1).click().perform();*/
+      
+	  
+	  /* For Demo */
+	  /* driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[1]/table/tbody/tr[1]/td[10]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
+	     driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[3]/table/tbody/tr/td[5]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
+	     PlexusSharedFunctions.ClickablebyXpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[6]/button");*/
+	  
+	  
+	  /*For Dev*/
+	 driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[1]/table/tbody/tr[1]/td[10]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
+	   driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[3]/table/tbody/tr/td[5]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
+	   PlexusSharedFunctions.ClickablebyXpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[6]/button");
+	  
+	  
+	  /* For External*/
+	  /*  driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[1]/table/tbody/tr[1]/td[10]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
+	    driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[3]/table/tbody/tr/td[5]/div/div/div[1]/div/div/div/div/label/div/div[2]")).click();
+	    PlexusSharedFunctions.ClickablebyXpath("html/body/div[2]/div/div[2]/div/div/div[2]/div/form/div[6]/button");*/
+	 
+	
+	
 	  driver.findElement(By.linkText("Promotions Wizard")).click();
     
 	
