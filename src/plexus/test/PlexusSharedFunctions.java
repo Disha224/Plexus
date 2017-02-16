@@ -110,11 +110,11 @@ public class PlexusSharedFunctions {
 		
 	}
 
-	@AfterClass(alwaysRun=true)
+/*	@AfterClass(alwaysRun=true)
 	public void tearDown(){
 		driver.close();
 		
-	}
+	}*/
 
 	
 }

@@ -2,23 +2,19 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47321" started-at="2017-02-16T06:17:55Z" finished-at="2017-02-16T06:18:42Z">
+  <suite name="Default suite" duration-ms="45311" started-at="2017-02-16T07:17:32Z" finished-at="2017-02-16T07:18:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47321" started-at="2017-02-16T06:17:55Z" finished-at="2017-02-16T06:18:42Z">
+    <test name="Default test" duration-ms="45311" started-at="2017-02-16T07:17:32Z" finished-at="2017-02-16T07:18:18Z">
       <class name="plexus.test.PromotionForm">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:plexus.test.PromotionForm@61832929]" name="LaunchBrowser" is-config="true" duration-ms="11382" started-at="2017-02-16T01:17:55Z" finished-at="2017-02-16T01:18:06Z">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:plexus.test.PromotionForm@5b275dab]" name="LaunchBrowser" is-config="true" duration-ms="10953" started-at="2017-02-16T02:17:32Z" finished-at="2017-02-16T02:17:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="TestPromotionForm()[pri:0, instance:plexus.test.PromotionForm@61832929]" name="TestPromotionForm" duration-ms="33595" started-at="2017-02-16T01:18:06Z" finished-at="2017-02-16T01:18:40Z">
+        <test-method status="PASS" signature="TestPromotionForm()[pri:0, instance:plexus.test.PromotionForm@5b275dab]" name="TestPromotionForm" duration-ms="34343" started-at="2017-02-16T02:17:43Z" finished-at="2017-02-16T02:18:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestPromotionForm -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:plexus.test.PromotionForm@61832929]" name="tearDown" is-config="true" duration-ms="2315" started-at="2017-02-16T01:18:40Z" finished-at="2017-02-16T01:18:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- plexus.test.PromotionForm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
