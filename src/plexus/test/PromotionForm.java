@@ -41,19 +41,17 @@ public class PromotionForm extends PlexusSharedFunctions {
   {
 	 
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div[2]/div/div/div[1]/div/ul[1]/li[1]/a/span[1]");
-	  PlexusSharedFunctions.verifyTextPresent("LET'S GET STARTED");
+	  PlexusSharedFunctions.verifyTextPresent("Setup Promotion");
 	  driver.findElement(By.name("title")).sendKeys(PromotionName);
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='root']/div/div[2]/div/div/section/form/footer/button[2]");
 	 
-	 
-	  
   }
  
   public void CheckPromoterInformation()
   {
 	 
 	 
-	  PlexusSharedFunctions.verifyTextPresent("PROMOTER INFORMATION");
+	  PlexusSharedFunctions.verifyTextPresent("Add Promoter");
 	  PlexusSharedFunctions.CheckEmpty("companyName","Promoter Pvt Limited");
 	  PlexusSharedFunctions.CheckEmpty("streetLine1","Level 1");
 	  PlexusSharedFunctions.CheckEmpty("streetLine2","23 Main St");
@@ -74,7 +72,7 @@ public class PromotionForm extends PlexusSharedFunctions {
   {
 	 
 	 
-	  PlexusSharedFunctions.verifyTextPresent("ADVERTISING METHODS");
+	  PlexusSharedFunctions.verifyTextPresent("Advertising Methods");
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='methods']/div/div[1]/div[1]/div/div[1]/div/div/div/label/div/div[2]");
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='methods']/div/div[1]/div[2]/div/div[1]/div/div/div/label/div/div[2]");
 	  Select oSelect = new Select(driver.findElement(By.name("socialMedia__site__0")));
@@ -110,7 +108,7 @@ public class PromotionForm extends PlexusSharedFunctions {
   {
 	 
 	  
-	  PlexusSharedFunctions.verifyTextPresent("ENTRANT GROUPS");
+	  PlexusSharedFunctions.verifyTextPresent("Entrant Groups");
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='entrant-group-form']/main/div/div[1]/div[1]/div/div/div/div/label/div/div[2]");
 	  driver.findElement(By.linkText("AU 18+"));
 	  driver.findElement(By.xpath(".//*[@id='entrant-group-form']/main/span/div[1]/div[1]/div[1]/div/div/div/div/label/div/div[2]")).click();
@@ -123,7 +121,7 @@ public class PromotionForm extends PlexusSharedFunctions {
   
   public void WhoCanEnter()
   {
-	 PlexusSharedFunctions.verifyTextPresent("HOW TO ENTER");
+	 PlexusSharedFunctions.verifyTextPresent("How to Enter");
 	 PlexusSharedFunctions.ClickablebyXpath(".//*[@id='entry-method-form']/main/div[4]/div[1]/div[1]/div/div/div/div/label/div/div[2]");
 	 driver.findElement(By.name("entryLimits__number__0")).sendKeys("1");
 	 Select oSelect = new Select(driver.findElement(By.name("entryLimits__type__0")));
@@ -138,7 +136,7 @@ public class PromotionForm extends PlexusSharedFunctions {
   public void HowtoEnter() throws InterruptedException
   {
 	 
-	  PlexusSharedFunctions.verifyTextPresent("HOW TO ENTER");
+	  PlexusSharedFunctions.verifyTextPresent("How to Enter");
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='entry-step-form']/main/div[2]/div[1]/div[1]/div/div/div/label/div[2]/span");
 	  PlexusSharedFunctions.ClickablebyXpath(".//*[@id='entry-step-form']/main/section/div[1]/div[1]/div[1]/div/div/div/div/label/div[1]/div[2]");
 	  Select oSelect = new Select(driver.findElement(By.name("purchaseRequirement")));
